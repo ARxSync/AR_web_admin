@@ -11,6 +11,7 @@
         <link href="css/reset.css" rel="stylesheet"/>
         <!-- Custom styles for this template -->
         <link rel="stylesheet/less" type="text/css" href="css/common.less" />
+        <link rel="stylesheet" type="text/css" href="css/scorllbar.css" />
         <script src="js/less.min.js" type="text/javascript"></script>
     </head>  <!-- 모든 헤더 부분은 동일합니다. -->
     <body>
@@ -26,24 +27,27 @@
                     <div>자막: </div>
                     <div class ="subtitleLanguage">한국어</div><!--어떤 언어의 자막인지 여기를 동적으로 변경해주시면 됩니다.-->
                 </div>
-                <div class ="controlPannelWrapper">
-                    <div class = "mainPannel">
+                <div class ="controlPanelWrapper">
+                    <div class = "mainPanel scrollbar style-3">
                         <table>
-                            
-                            <tr class = "pannelTitle">
+                            <!--패널 타이틀 START-->
+                            <tr class = "panelTitle">
                                 <th class="subtitleId">id</th>
                                 <th class="startTime">start</th>
                                 <th class="endTime">end</th>
                                 <th class="subtitleContent">txt</th>
                             </tr>
+                            <!--패널 타이틀 END-->
                             
-                            <tr class = "pannelContent">
+                            <!--자막 xml 내용이 동적을 추가될 부분 START-->
+                            <tr class = "panelContent">
                                 <td class="subtitleId">1</td>
                                 <td class="startTime">00:00:00.000</td>
                                 <td class="endTime">00:00:01.050</td>
                                 <td class="subtitleContent">ffffff</td>
                             </tr>
-
+                            <!--자막 xml 내용이 동적을 추가될 부분 END-->
+                            
                         </table>
                     </div>
                     <input type="button" class ="editSubtitle" value="수정하기(자막명 변경, 파일변경(xml), 폰트변경)"/>
@@ -57,23 +61,26 @@
                     <div>자막: </div>
                     <div class ="subtitleLanguage">한국어</div><!--어떤 언어의 자막인지 여기를 동적으로 변경해주시면 됩니다.-->
                 </div>
-                <div class ="controlPannelWrapper">
-                    <div class = "mainPannel">
+                <div class ="controlPanelWrapper">
+                    <div class = "mainPanel scrollbar style-3">
                         <table>
-                            
-                            <tr class = "pannelTitle">
+                            <!--패널 타이틀 START-->
+                            <tr class = "panelTitle">
                                 <th class="subtitleId">id</th>
                                 <th class="startTime">start</th>
                                 <th class="endTime">end</th>
                                 <th class="subtitleContent">txt</th>
                             </tr>
+                            <!--패널 타이틀 END-->
                             
-                            <tr class = "pannelContent">
+                            <!--자막 xml 내용이 동적을 추가될 부분 START-->
+                            <tr class = "panelContent">
                                 <td class="subtitleId">1</td>
                                 <td class="startTime">00:00:00.000</td>
                                 <td class="endTime">00:00:01.050</td>
                                 <td class="subtitleContent">ffffff</td>
                             </tr>
+                            <!--자막 xml 내용이 동적을 추가될 부분 END-->
                             
                         </table>
                     </div>
@@ -82,6 +89,31 @@
             </div>
             <!--두 번째 자막 패널 부분 END-->            
             
+            <div class = "operatePanelWrapper">
+                <div class = "bottomItem languageSelection">
+                    <div class = "languageItemsWrapper scrollbar style-3">
+                        <div class = "languageItemSelected">
+                            한국어
+                            <input type = "button" class = "deleteBtn">
+                        </div>
+                        <div class = "languageItemSelected">
+                            영어
+                            <input type = "button" class = "deleteBtn">
+                        </div>
+                        <div class = "languageItemDefault">
+                            한국어
+                            <input type = "button" class = "deleteBtn">
+                        </div>
+                    </div>
+                    <input type="button" class = "addLanguageBtn" value="언어 추가하기(자막파일 추가하기)"/>
+                </div>
+                <div class = "bottomItem jumpTo">
+                    
+                </div>
+                <div class = "bottomItem playPanel">
+                    
+                </div>
+            </div>
             
         </div>
 <!-- ================================================================================= 

@@ -63,11 +63,12 @@ h2{
 
 /*여기서부터 아래부분은 컨트롤 html 페이지*/
 
+@mainPanelWidth: 455px;
 
 
 .controlWrapper{
     margin-top: 70px;
-    width: 956px;
+    width: 1000px;
     margin-left: auto;
     margin-right: auto;
     font: 500 12px NanumGothic;
@@ -85,9 +86,10 @@ h2{
     height: 405px;
     width: 469px;
     float: left;
+    margin-left: 20px;
 }
 
-.controlPannelWrapper{
+.controlPanelWrapper{
     height: 385px;
     width: 469px;
     background-color: @sub-color;
@@ -95,45 +97,54 @@ h2{
     padding-left: 13px; 
 }
 
-.mainPannel{
+.mainPanel{
     background-color: #fff;
     height: 326px;
-    width: 441px;
+    width: @mainPanelWidth;
     text-align: center;
 }
 
-.pannelTitle{
+.panelTitle{
     height: 20px;
     font-size: 14px;
     font-weight: 900;
 }
 
-.pannelContent{
+.panelContent{
     height: 20px;
 }
 
 
 .subtitleId{
-    width: 30px;
+    width: @mainPanelWidth / 15.166666;
 }
 
 .startTime{
-    width: 90px;
+    width: @mainPanelWidth/5.05555555;
 }
 
 .endTime{
-    width: 90px;
+    width: @mainPanelWidth/5.05555555;
 }
 
 .subtitleContent{
-    width: 231px;
+    width: @mainPanelWidth/1.85714286;
 }
 
 .editSubtitle{
     background-color: @black;
-    width: 441px;
+    width: @mainPanelWidth;
     height: 40px;
     margin-top: 5px;
     color: #fff;
+}
+
+
+
+
+
+
+.operatePanelWrapper{
+    margin-top: px;
 }
 
