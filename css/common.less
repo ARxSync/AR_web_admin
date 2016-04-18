@@ -1,8 +1,11 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
 @base-color: #e72368;
 @black: #131212;
 @sub-color: #c3c3c3;
 
 body{
+    font-family: 'Nanum Gothic', serif;
     font: 500 15px NanumGothic;
 }
 
@@ -54,5 +57,83 @@ h2{
     width: 291px;
     height: 43px;
     font: 600 16px NanumGothic;
+}
+
+
+
+/*여기서부터 아래부분은 컨트롤 html 페이지*/
+
+
+
+.controlWrapper{
+    margin-top: 70px;
+    width: 956px;
+    margin-left: auto;
+    margin-right: auto;
+    font: 500 12px NanumGothic;
+}
+
+.subtitleLanguageWrapper{
+    height: 30px;
+    div{
+        float: left; 
+        font: 600 14px NanumGothic;
+    }
+}
+
+.subtitleControlWrapper{
+    height: 405px;
+    width: 469px;
+    float: left;
+}
+
+.controlPannelWrapper{
+    height: 385px;
+    width: 469px;
+    background-color: @sub-color;
+    padding-top: 19px;
+    padding-left: 13px; 
+}
+
+.mainPannel{
+    background-color: #fff;
+    height: 326px;
+    width: 441px;
+    text-align: center;
+}
+
+.pannelTitle{
+    height: 20px;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.pannelContent{
+    height: 20px;
+}
+
+
+.subtitleId{
+    width: 30px;
+}
+
+.startTime{
+    width: 90px;
+}
+
+.endTime{
+    width: 90px;
+}
+
+.subtitleContent{
+    width: 231px;
+}
+
+.editSubtitle{
+    background-color: @black;
+    width: 441px;
+    height: 40px;
+    margin-top: 5px;
+    color: #fff;
 }
 
