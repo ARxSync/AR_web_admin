@@ -56,7 +56,7 @@
             <!--첫 번째 자막 패널 부분 END-->
 
             <!--두 번째 자막 패널 부분 START-->
-            <div class = "subtitleControlWrapper">
+            <div class = "subtitleControlWrapper secondPanel">
                 <div class = "subtitleLanguageWrapper">
                     <div>자막: </div>
                     <div class ="subtitleLanguage">한국어</div><!--어떤 언어의 자막인지 여기를 동적으로 변경해주시면 됩니다.-->
@@ -88,34 +88,56 @@
                 </div>
             </div>
             <!--두 번째 자막 패널 부분 END-->            
-            
-            <div class = "operatePanelWrapper">
-                <div class = "bottomItem languageSelection">
+             <div class = "operatePanelWrapper">
+                <div class = "bottomItems languageSelection">
                     <div class = "languageItemsWrapper scrollbar style-3">
+                        <!--현재 메인 패널에 선택된 자막 파일 START-->
                         <div class = "languageItemSelected">
                             한국어
-                            <input type = "button" class = "deleteBtn">
+                            <input type = "button" class = "deleteBtn"><!--삭제버튼-->
                         </div>
                         <div class = "languageItemSelected">
                             영어
-                            <input type = "button" class = "deleteBtn">
+                            <input type = "button" class = "deleteBtn"><!--삭제버튼-->
                         </div>
+                        <!--현재 메인 패널에 선택된 자막 파일 END-->
+                        
+                        <!--현재 선택되지 않은 자막 파일 START-->
                         <div class = "languageItemDefault">
                             한국어
-                            <input type = "button" class = "deleteBtn">
+                            <input type = "button" class = "deleteBtn"><!--삭제버튼-->
                         </div>
+                        <!--현재 선택되지 않은 자막 파일 END-->
                     </div>
                     <input type="button" class = "addLanguageBtn" value="언어 추가하기(자막파일 추가하기)"/>
                 </div>
-                <div class = "bottomItem jumpTo">
-                    
+                <div class = "bottomItems jumpTo">
+                    <div>Jump to</div>
+                    <div>
+                        <div class="label">List</div>
+                        <div><input class="jumpToTextBox" type="text"/></div>
+                        <div><input class="jumpToBtn" type="button" value="이동"></div>
+                    </div>
+                    <div>
+                        <div class="label">Time</div>
+                        <div><input class="jumpToTextBox" type="text"/></div>
+                        <div><input class="jumpToBtn" type="button" value="이동"></div>
+                    </div>
                 </div>
-                <div class = "bottomItem playPanel">
-                    
+                <div class = "bottomItems playPanel">
+                    <div class = "playControlWrapper">
+                        <div class = "playAndStop">
+                        </div>
+                        <div class = "">
+                        </div>
+                        <div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
         </div>
+        
+
 <!-- ================================================================================= 
                                        컨텐츠 부분
     ================================================================================= -->        
