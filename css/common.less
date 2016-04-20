@@ -67,11 +67,17 @@ h2{
 @mainPanelWidth: 455px;
 
 .controlWrapper{
-    margin-top: 70px;
+    margin-top: 50px;
     width: @totalWidth;
     margin-left: auto;
     margin-right: auto;
     font: 500 12px NanumGothic;
+}
+
+.pinCode{
+    text-align: right;
+    margin-right: 30px;
+    font: 600 18px NanumGothic;
 }
 
 .subtitleLanguageWrapper{
@@ -230,10 +236,90 @@ h2{
 .playPanel{
     margin-left: 10px;
     float: left;
+    padding-top: 40px;
     width: (@totalWidth - (@totalWidth/3 + @totalWidth/5)-49px);
-    >div{
-        
+    height: @bottomPanelHeight - 40px;
+}
+
+.playAndStopWrapper{
+    margin-left: 40px;
+    float: left;
+    .playAndStopBtn{
+        width: 100px;
+        height: 100px;
     }
 }
+
+.labelPlayStop{
+    text-align: center;
+    color: #fff;
+    margin-top: 3px;
+}
+
+.controlSubtitleBtnWrapper{
+    margin-left: 25px;
+    float: left;
+}
+
+.prevSubtitleWrapper{
+    float: none;
+    margin-top: 16px;
+}
+
+.nextSubtitleWrapper{
+    float: none;
+    margin-top: 60px;
+}
+
+.prevSubtitleBtn{
+    float: left;
+    width: 25px;
+    height: 25px;
+}
+
+.nextSubtitleBtn{
+    width: 25px;
+    height: 25px;
+    float: left;
+}
+
+.labelPrevBtn{
+    color: #fff;
+    height: 25px;
+    text-align: left;
+    width: 80px;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.labelNextBtn{
+    margin-top: 5px;
+    color: #fff;
+    height: 25px;
+    margin-left: 5px;
+    width: 80px;
+    float: left;
+    text-align: left;
+}
+
+.allStopWrapper{
+    float: left;
+    margin-top: 36px;
+    margin-left: 25px;
+}
+
+.stopBtn{
+    float: left;
+    width:  25px;
+    height: 25px;
+}
+.labelStopBtn{
+    float: left;
+    color: #fff;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
 
 
