@@ -145,6 +145,7 @@ h2{
 
 
 @bottomPanelHeight: 211px;
+@panelBackground: #2a2a2a;
 
 /*아래 조작 패널*/
 .operatePanelWrapper{
@@ -153,25 +154,86 @@ h2{
 }
 
 .bottomItems{
-    background-color: @black;
+    background-color: @panelBackground;
     height: @bottomPanelHeight;
 }
 
 .languageSelection{
     float: left;
     width: @totalWidth / 3;
+    .languageItemsWrapper{
+        margin-left: 8px;
+        margin-top: 8px;
+        height: @bottomPanelHeight * 0.7;
+        width: (@totalWidth / 3) * 0.95;
+        background-color: @panelBackground;
+        div{
+            height: 41px;
+            width: 129px;
+            float: left;
+            text-align: center;
+            margin-left: 18px;
+            margin-top: 8px;
+            div{
+                padding-top: 12px;
+                margin-top: 0px;
+                width: 80px;
+            }
+            .deleteBtn{
+                margin-top: 9px;
+            }
+        }
+        .languageItemSelected{
+            background-color: @base-color;
+        }
+        .languageItemDefault{
+            background-color: #fff;
+        }
+    }
+    .addLanguageBtn{
+        margin-left: 24px;
+        height: 41px;
+        width: (@totalWidth / 3) * 0.83;
+    }
 }
 
 .jumpTo{
     float: left;
     width: @totalWidth / 5;
     margin-left: 10px;
+    div{
+        margin-top: 10px;
+        text-align: center;
+        color: #fff;
+        font-size: 19px;
+    }
+    .jumpToWrapper{
+        margin-top: 20px;
+        .labelJumpTo{
+            width: 50px;
+            margin-left: 4px;
+        }
+        div{
+            float: left;
+            margin-top: 20px;
+            .jumpToTextBox{
+                width: 90px;
+            }
+            .jumpToBtn{
+                margin-left: 5px;
+                width: 35px;
+            }
+        }
+    }
 }
 
 .playPanel{
     margin-left: 10px;
     float: left;
     width: (@totalWidth - (@totalWidth/3 + @totalWidth/5)-49px);
+    >div{
+        
+    }
 }
 
 
