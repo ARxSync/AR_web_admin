@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    
+    <head>
+            <!-- reset CSS -->
+        <link href="css/reset.css" rel="stylesheet"/>
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet/less" type="text/css" href="css/common.less" />
+        <script src="js/less.min.js" type="text/javascript"></script>
+    </head>    
+    
+    
+    
+    <body>
+        <!-- ================================================================================= 
+                                       컨텐츠 부분
+        ================================================================================= -->
+
+        <div th:if="${message}">
+            <h2 th:text="${message}"/>
+        </div>
+
+        <div>
+            <!--자막 입력 Table START-->
+            <form method="POST" enctype="multipart/form-data" action="/upload">
+                <div class="uploadTable">
+                    <table>
+                        
+                        <tr class = "uploadWrapper">
+                            <td class="subtitleNameLabel">자막명</td>
+                            <td><input class="subtitleNameInput" type="text" name="name" /></td>
+                        </tr>
+                        <tr class = "uploadWrapper">
+                            <td class="subtitleFileLabel">자막파일</td>
+                            <td><input class="fileUploadBtn" type="file" name="file" /></td>
+                        </tr>
+                    </table>
+                    <input class="uploadBtn" type="submit" value="Upload" />
+                </div>
+            </form>
+            <!--자막 입력 Table START-->
+        </div>
+        
+        <!-- ================================================================================= 
+                                       컨텐츠 부분
+        ================================================================================= -->
+    </body>
+    
+</html>
