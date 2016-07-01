@@ -12,6 +12,7 @@
         <!-- Custom styles for this template -->
         <link rel="stylesheet/less" type="text/css" href="css/common.less" />
         <link rel="stylesheet" type="text/css" href="css/scorllbar.css" />
+        <link rel="stylesheet" type="text/css" href="css/scrollbarForLanguage.css" />
         <script src="js/less.min.js" type="text/javascript"></script>
     </head>  <!-- 모든 헤더 부분은 동일합니다. -->
     <body>
@@ -23,27 +24,64 @@
         <div class ="controlWrapper">
             
             <!--Pin 코드 START-->
-            <div class="pinCode">Pin 코드: 1</div>
+            <div class="pinCode">Pincode : 1</div>
             <!--Pin 코드 END-->
             
-            <!--첫 번째 자막 패널 부분 START-->
-            <div class = "subtitleControlWrapper">
-                <div class = "subtitleLanguageWrapper">
-                    <div>자막: </div>
-                    <div class ="subtitleLanguage">한국어</div><!--어떤 언어의 자막인지 여기를 동적으로 변경해주시면 됩니다.-->
+                <!--언어 선택하기 패널 START-->
+                <div class = "languageSelection">
+                    <div class = "languageItemsWrapper scrollbarForLan style-3-lan">
+                        <!--현재 메인 패널에 선택된 자막 파일 START-->
+                        <!--버튼 하나 시작 START-->
+                        <div>
+                            <label>한국어</label>
+                        </div>
+                        <input type = "button" class = "deleteBtn"><!--삭제버튼-->
+                        <!--버튼 하나 시작 END-->
+                        
+                        <!--버튼 하나 시작 START-->
+                        <div>
+                            <label>영어</label>
+                        </div>
+                        <input type = "button" class = "deleteBtn"><!--삭제버튼-->
+                        <!--버튼 하나 시작 END-->
+                        
+                        <!--버튼 하나 시작 START-->
+                        <!--현재 선택되지 않은 자막 파일 START-->
+                        <div>
+                            <label>안둠fjd</label>
+                        </div>
+                        <input type = "button" class = "deleteBtn"><!--삭제버튼-->
+                        <!--버튼 하나 시작 END-->
+                        
+                    </div>
+                    <div class ="divisionline"></div>
+                    <input type="button" class = "addLanguageBtn"/>
                 </div>
-                <div class ="controlPanelWrapper">
-                    <div class = "mainPanel scrollbar style-3">
+                <!--언어 선택하기 패널 END-->
+            
+            <!--첫 번째 자막 패널 부분 START-->
+            <div class ="controlPanelWrapper">
+                
+                <!--언어 정보 보여주는 곳 START-->
+                <div class = "languageWrapper">
+                    <label>한국어</label>
+                </div>
+                <!--언어 정보 보여주는 곳 END-->
+                
+                <!--자막 정보 보여주는 곳 START-->
+                <div class = "mainPanel">
+                    <table class = "panelTitleWrapper">
+                        <!--패널 타이틀 START-->
+                        <tr class = "panelTitle">
+                            <th class="subtitleId">id</th>
+                            <th class="startTime">start</th>
+                            <th class="endTime">end</th>
+                            <th class="subtitleContent">txt</th>
+                        </tr>
+                        <!--패널 타이틀 END-->
+                    </table>
+                    <div class = "subtitlePart scrollbar style-3">
                         <table>
-                            <!--패널 타이틀 START-->
-                            <tr class = "panelTitle">
-                                <th class="subtitleId">id</th>
-                                <th class="startTime">start</th>
-                                <th class="endTime">end</th>
-                                <th class="subtitleContent">txt</th>
-                            </tr>
-                            <!--패널 타이틀 END-->
-                            
                             <!--자막 xml 내용이 동적을 추가될 부분 START-->
                             <tr class = "panelContent">
                                 <td class="subtitleId">1</td>
@@ -51,33 +89,49 @@
                                 <td class="endTime">00:00:01.050</td>
                                 <td class="subtitleContent">ffffff</td>
                             </tr>
+
+                            <tr class = "panelContent">
+                                <td class="subtitleId">1</td>
+                                <td class="startTime">00:00:00.000</td>
+                                <td class="endTime">00:00:01.050</td>
+                                <td class="subtitleContent">ffffff</td>
+                            </tr>
                             <!--자막 xml 내용이 동적을 추가될 부분 END-->
-                            
-                        </table>
+                    </table>
                     </div>
-                    <input type="button" class ="editSubtitle" value="수정하기(자막명 변경, 파일변경(xml), 폰트변경)"/>
                 </div>
+                <!--자막 정보 보여주는 곳 END-->
+                
+                <!--버튼 START -->
+                <input type="button" class ="editSubtitle" value="수정하기(자막명 변경, 파일변경(xml), 폰트변경)"/>
+                <!--버튼 END -->
+                
             </div>
             <!--첫 번째 자막 패널 부분 END-->
-
+            
             <!--두 번째 자막 패널 부분 START-->
-            <div class = "subtitleControlWrapper secondPanel">
-                <div class = "subtitleLanguageWrapper">
-                    <div>자막: </div>
-                    <div class ="subtitleLanguage">한국어</div><!--어떤 언어의 자막인지 여기를 동적으로 변경해주시면 됩니다.-->
+            <div class ="controlPanelWrapper secondPanel">
+                
+                <!--언어 정보 보여주는 곳 START-->
+                <div class = "languageWrapper">
+                    <label>한국어</label>
                 </div>
-                <div class ="controlPanelWrapper">
-                    <div class = "mainPanel scrollbar style-3">
+                <!--언어 정보 보여주는 곳 END-->
+                
+                <!--자막 정보 보여주는 곳 START-->
+                <div class = "mainPanel">
+                    <table class = "panelTitleWrapper">
+                        <!--패널 타이틀 START-->
+                        <tr class = "panelTitle">
+                            <th class="subtitleId">id</th>
+                            <th class="startTime">start</th>
+                            <th class="endTime">end</th>
+                            <th class="subtitleContent">txt</th>
+                        </tr>
+                        <!--패널 타이틀 END-->
+                    </table>
+                    <div class = "subtitlePart scrollbar style-3">
                         <table>
-                            <!--패널 타이틀 START-->
-                            <tr class = "panelTitle">
-                                <th class="subtitleId">id</th>
-                                <th class="startTime">start</th>
-                                <th class="endTime">end</th>
-                                <th class="subtitleContent">txt</th>
-                            </tr>
-                            <!--패널 타이틀 END-->
-                            
                             <!--자막 xml 내용이 동적을 추가될 부분 START-->
                             <tr class = "panelContent">
                                 <td class="subtitleId">1</td>
@@ -85,87 +139,74 @@
                                 <td class="endTime">00:00:01.050</td>
                                 <td class="subtitleContent">ffffff</td>
                             </tr>
+
+                            <tr class = "panelContent">
+                                <td class="subtitleId">1</td>
+                                <td class="startTime">00:00:00.000</td>
+                                <td class="endTime">00:00:01.050</td>
+                                <td class="subtitleContent">ffffff</td>
+                            </tr>
                             <!--자막 xml 내용이 동적을 추가될 부분 END-->
-                            
-                        </table>
+                    </table>
                     </div>
-                    <input type="button" class ="editSubtitle" value="수정하기(자막명 변경, 파일변경(xml), 폰트변경)"/>
                 </div>
+                <!--자막 정보 보여주는 곳 END-->
+                
+                <!--버튼 START -->
+                <input type="button" class ="editSubtitle" value="수정하기(자막명 변경, 파일변경(xml), 폰트변경)"/>
+                <!--버튼 END -->
+                
             </div>
             <!--두 번째 자막 패널 부분 END-->
             
             <!--조작 패널 부분 START-->
              <div class = "operatePanelWrapper">
-                <!--언어 선택하기 패널 START-->
-                <div class = "bottomItems languageSelection">
-                    <div class = "languageItemsWrapper scrollbar style-3">
-                        <!--현재 메인 패널에 선택된 자막 파일 START-->
-                        <div class = "languageItemSelected">
-                            <div>한국어</div>
-                            <input type = "button" class = "deleteBtn"><!--삭제버튼-->
-                        </div>
-                        <div class = "languageItemSelected">
-                            <div>영어</div>
-                            <input type = "button" class = "deleteBtn"><!--삭제버튼-->
-                        </div>
-                        <!--현재 메인 패널에 선택된 자막 파일 END-->
-                        
-                        <!--현재 선택되지 않은 자막 파일 START-->
-                        <div class = "languageItemDefault">
-                            <div>안선택어</div>
-                            <input type = "button" class = "deleteBtn"><!--삭제버튼-->
-                        </div>
-                        <!--현재 선택되지 않은 자막 파일 END-->
-                    </div>
-                    <input type="button" class = "addLanguageBtn" value="언어 추가하기(자막파일 추가하기)"/>
-                </div>
-                <!--언어 선택하기 패널 END-->
-                 
                 <!--Jump To 패널 START-->
                 <div class = "bottomItems jumpTo">
-                    <div>Jump to</div>
+                    <div class="jumpToTitleText">
+                        <p>JUMP<br><br>
+                        T &nbsp; &nbsp; O</p>
+                    </div>
+                    
                     <div class = "jumpToWrapper">
-                        <div class="labelJumpTo">List</div>
-                        <div><input class="jumpToTextBox" type="text"/></div>
-                        <div><input class="jumpToBtn" type="button" value="이동"></div>
+                        <div class="labelJumpTo">L&nbsp;I&nbsp;S&nbsp;T</div>
+                        <input class="jumpToTextBox" type="text"/>
+                        <input class="jumpToBtn" type="button">
                     </div>
                     <div class = "jumpToWrapper">
-                        <div class="labelJumpTo">Time</div>
-                        <div><input class="jumpToTextBox" type="text"/></div>
-                        <div><input class="jumpToBtn" type="button" value="이동"/></div>
+                        <div class="labelJumpTo">T&nbsp;I&nbsp;M&nbsp;E</div>
+                        <input class="jumpToTextBox" type="text"/>
+                        <input class="jumpToBtn" type="button"/>
                     </div>
                 </div>
                  <!--Jump To 패널 END-->
                  
                  <!--재생, 일시정지, 정지, 이전 및 다음 자막 바로가기 패널 START-->
                 <div class = "bottomItems playPanel">
-                    <div class = "playControlWrapper">
-                        <div class = "playAndStopWrapper">
-                            <!--재생/일시정지 버튼 및 라벨 START-->
-                            <input type = "button" class = "playAndStopBtn"/>
-                            <div class = "labelPlayStop">재생/일시정지</div>
-                            <!--재생/일시정지 버튼 및 라벨 END-->
-                        </div>
-                        <div class = "controlSubtitleBtnWrapper">
-                            <div class = "prevSubtitleWrapper">
-                                <!--이전 자막 버튼 및 라벨 START-->
-                                <input type ="button" class = "prevSubtitleBtn"/>
-                                <div class = "labelPrevBtn">이전 자막으로</div>
-                                <!--이전 자막 버튼 및 라벨 END-->
-                            </div>
-                            <div class = "nextSubtitleWrapper">
-                                <!--다음 자막 버튼 및 라벨 START-->
-                                <input type ="button" class = "nextSubtitleBtn"/>
-                                <div class = "labelNextBtn">다음 자막으로</div>
-                                <!--다음 자막 버튼 및 라벨 END-->
-                            </div>
-                        </div>
-                        <div class = "allStopWrapper">
-                            <!--정지 버튼 및 라벨 START-->
-                            <input type ="button" class = "stopBtn"/>
-                            <div class = "labelStopBtn">정지</div>
-                            <!--정지 버튼 및 라벨 END-->
-                        </div>
+                    <div class = "playPanelWrapper">
+                        <!--'처음으로' 자막 버튼 및 라벨 START-->
+                        <input class = "totalPrevSubtitleBtn" type ="button"/>
+                        <!--'처음으로' 자막 버튼 및 라벨 END-->
+
+                        <!--이전 자막 버튼 및 라벨 START-->
+                        <input type ="button" class = "prevSubtitleBtn"/>
+                        <!--이전 자막 버튼 및 라벨 END-->
+
+                        <!--재생/일시정지 버튼 및 라벨 START-->
+                        <input type = "button" class = "playBtn"/><!-- 클릭하면 class를 "tempStopBtn"으로 변경해주시면 일시정지 버튼이 나타납니다. -->
+                        <!--재생/일시정지 버튼 및 라벨 END-->
+
+                        <!--다음 자막 버튼 및 라벨 START-->
+                        <input type ="button" class = "nextSubtitleBtn"/>
+                        <!--다음 자막 버튼 및 라벨 END-->
+
+                        <!--'끝으로' 자막 버튼 및 라벨 START-->
+                        <input type ="button" class = "totalNextSubtitleBtn"/>
+                        <!--'끝으로' 자막 버튼 및 라벨 END-->
+
+                        <!--정지 버튼 및 라벨 START-->
+                        <input type ="button" class = "stopBtn"/>
+                        <!--정지 버튼 및 라벨 END-->
                     </div>
                 </div>
                  <!--재생, 일시정지, 정지, 이전 및 다음 자막 바로가기 패널 END-->                 

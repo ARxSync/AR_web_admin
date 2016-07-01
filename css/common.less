@@ -10,7 +10,7 @@ body{
     height: inherit;
     font-family: 'Nanum Gothic', serif;
     font: 500 15px NanumGothic;
-    background-color: #000;
+    background-color: #fff;
 }
 
 .totalWrapper{
@@ -21,24 +21,6 @@ body{
     padding-top: 20px;
     background-image: url("../img/backgroundimg.png");
     background-repeat: repeat-y;
-}
-
-.topLeftText{
-    width: 97px;
-    height: 20px;    
-    background-image: url("../img/xsynctext.png");
-    margin-left: 30px;
-    
-}
-
-.glassesImg{
-    width: 1282px;
-    height: 300px;
-    position: absolute;
-    bottom: 0px;
-    background-position: center;
-    background-image: url("../img/glassesimg.png");
-    
 }
 
 .wrapper{
@@ -120,48 +102,54 @@ body{
 
 /*여기서부터 아래부분은 컨트롤 html 페이지*/
 
-@totalWidth: 1000px;
-@mainPanelWidth: 455px;
+@totalWidth: 1100px;
+@mainPanelWidth: 503px;
+
+
 
 .controlWrapper{
-    margin-top: 50px;
     width: @totalWidth;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 17px;
     font: 500 12px NanumGothic;
 }
 
 .pinCode{
-    text-align: right;
-    margin-right: 30px;
-    font: 600 18px NanumGothic;
-}
-
-.subtitleLanguageWrapper{
-    height: 30px;
-    div{
-        float: left; 
-        font: 600 14px NanumGothic;
-    }
-}
-
-.subtitleControlWrapper{
-    height: 455px;
-    width: 469px;
-    float: left;
+    margin-bottom: 10px;
+    text-align: center;
+    font: 18px NanumGothic;
 }
 
 .secondPanel{
-    margin-left: 20px;
+    margin-left: 14px;
 }
 
 .controlPanelWrapper{
-    height: 385px;
-    width: 469px;
-    background-color: @sub-color;
-    padding-top: 19px;
-    padding-left: 13px; 
+    margin-top: 17px;
+    height: 490.3px;
+    width: 503.3px;
+    display: inline-block;
+    border: 3px solid @panelBackground;
+    padding: 16px;
+    padding-top: 12px;
 }
+
+.languageWrapper{
+    height: 80px;
+    text-align: center;
+    padding-bottom: 10px;
+    label{
+        width: 77px;
+        height: 77px;
+        display: inline-block;
+        padding-top: 31px;
+        background: url(../img/currentlangcir.png) no-repeat;
+    }
+}
+
+
 
 .mainPanel{
     background-color: #fff;
@@ -170,16 +158,33 @@ body{
     text-align: center;
 }
 
+.panelTitleWrapper{
+    position: absolute;
+    height: 44px;
+    border-top: 2px solid @panelBackground;
+    border-bottom: 2px solid @panelBackground;
+    top: 325px;
+    
+}
+
 .panelTitle{
-    height: 20px;
-    font-size: 14px;
-    font-weight: 900;
+    display: block;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.subtitlePart{
+    height: 300px;
+    margin-top: 45px;
+    background: #fff;
 }
 
 .panelContent{
     height: 20px;
+    background: #fff;
+    font-size: 12px;
 }
-
 
 .subtitleId{
     width: @mainPanelWidth / 15.166666;
@@ -198,16 +203,24 @@ body{
 }
 
 .editSubtitle{
-    background-color: @black;
+    background-color: #fff;
     width: @mainPanelWidth;
     height: 40px;
     margin-top: 5px;
+    color: #000;
+    font-size: 16px;
+    border: 2px solid @panelBackground;
+}
+.editSubtitle:hover{
+    background-color: #bfbfbf;
+}
+.editSubtitle:active{
+    background-color: #2a2a2a;
     color: #fff;
 }
 
 
-
-@bottomPanelHeight: 211px;
+@bottomPanelHeight: 70px;
 @panelBackground: #2a2a2a;
 
 /*아래 조작 패널*/
@@ -219,166 +232,221 @@ body{
 .bottomItems{
     background-color: @panelBackground;
     height: @bottomPanelHeight;
+    margin-top: 17px;
+    width: 503.3px;
+    display: inline-block;
+    border: 3px solid @panelBackground;
+    padding: 16px;
+    padding-top: 12px;
 }
 
 .languageSelection{
-    float: left;
-    width: @totalWidth / 3;
+    width: @totalWidth;
+    background-color: @panelBackground;
+    height: 110px;
+    padding-top: 18px;
+    
     .languageItemsWrapper{
-        margin-left: 8px;
-        margin-top: 8px;
-        height: @bottomPanelHeight * 0.7;
-        width: (@totalWidth / 3) * 0.95;
-        background-color: @panelBackground;
+        margin-left: 30px;
+        width: 948px;
+        height: 85px;
+        background: @panelBackground;
+       
         div{
-            height: 41px;
-            width: 129px;
-            float: left;
-            text-align: center;
-            margin-left: 18px;
+            height: 65px;
+            width: 65px;
             margin-top: 8px;
-            div{
-                padding-top: 12px;
-                margin-top: 0px;
-                width: 80px;
+            margin-right: -13px;
+            display:inline-block;
+            text-align: center;    
+            position: relative;
+            z-index: 0;
+            background: url(../img/langselectbtn.png) no-repeat;
+            label{
+                float: left;
+                width: 65px;
+                margin-top: 25px;
             }
-            .deleteBtn{
-                margin-top: 9px;
+            
+        }
+        div:hover{
+            background: url(../img/langselectbtnhover.png);
+        }
+        div:active{
+            background: url(../img/langselectbtnpress.png);
+            label{
+                color: #fff;
             }
         }
-        .languageItemSelected{
-            background-color: @base-color;
-        }
-        .languageItemDefault{
-            background-color: #fff;
+        .deleteBtn{
+            top: -53px;
+            left: 6px;
+            height: 10px;
+            margin-right: 13px;
+            border: none;
+            background: url(../img/deletebtn.png) no-repeat;
+            position: relative;
+            z-index: 3;
         }
     }
+    .divisionline{
+        margin-top: 8px;
+        margin-left: 16px;
+        width: 2px;
+        display: inline-block;
+        height: 77px;
+        background: #fff;
+    }
     .addLanguageBtn{
-        margin-left: 24px;
-        height: 41px;
-        width: (@totalWidth / 3) * 0.83;
+        margin-left: 17px;
+        height: 72px;
+        width: 77px;
+        display: inline-block;
+        border: none;
+        background: url(../img/addlangbtn.png) no-repeat;
+    }
+    .addLanguageBtn:hover{
+        background: url(../img/addlangbtnhover.png) no-repeat;
+    }
+    .addLanguageBtn:active{
+        background: url(../img/addlangbtnpress.png) no-repeat;
     }
 }
 
 .jumpTo{
     float: left;
-    width: @totalWidth / 5;
-    margin-left: 10px;
-    div{
-        margin-top: 10px;
-        text-align: center;
-        color: #fff;
-        font-size: 19px;
-    }
-    .jumpToWrapper{
-        margin-top: 20px;
-        .labelJumpTo{
-            width: 50px;
-            margin-left: 4px;
-        }
-        div{
-            float: left;
-            margin-top: 20px;
-            .jumpToTextBox{
-                width: 90px;
-            }
-            .jumpToBtn{
-                margin-left: 5px;
-                width: 35px;
-            }
-        }
-    }
 }
 
+.jumpToTitleText{
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-right: 25px;
+    text-align: left;
+    color: #fff;
+    font-size: 19px;
+    border-right: 2px solid #fff;
+    float: left;
+}
+.jumpToWrapper{
+    margin-top: 7px;
+    margin-left: 20px;
+    width: 375px;
+    float: left;    
+}
+.labelJumpTo{
+    width: 70px;
+    margin-left: 4px;
+    float: left;
+    font-weight: 100;
+    color: #fff;
+    font-size: 18px;
+}
+.jumpToTextBox{
+    margin-left: 10px;
+    width: 230px;
+    height: 20px;
+    float: left;
+}  
+
+.jumpToBtn{
+    margin-left: 15px;
+    width: 28px;
+    height: 28px;
+    border: 0px;
+    float: left;
+    background: url(../img/gobtn.png);
+}
+.jumpToBtn:hover{
+    background: url(../img/gobtnhover.png);
+}
+.jumpToBtn:active{
+    background: url(../img/gobtnpress.png);
+}
+
+
+//재생, 일시정지, 정지, 이전 등등 버튼 시작
 .playPanel{
-    margin-left: 10px;
+    margin-left: 17px;
     float: left;
-    padding-top: 40px;
-    width: (@totalWidth - (@totalWidth/3 + @totalWidth/5)-49px);
-    height: @bottomPanelHeight - 40px;
+}
+.playPanelWrapper{
+    padding: 6px 25px;
+    height: 70px;
 }
 
-.playAndStopWrapper{
-    margin-left: 40px;
-    float: left;
-    .playAndStopBtn{
-        width: 100px;
-        height: 100px;
+    //여기서부터 버튼 시작
+.playPanelWrapper input{
+    border: 0px;
+    height: 61px;
+    width: 61px;
+    margin-left: 10px;
+}
+.totalPrevSubtitleBtn{  
+    background: url(../img/totalbackbtn.png);
+    &:hover{
+        background: url(../img/totalbackbtnhover.png);
+    }
+    &:active{
+        background: url(../img/totalbackbtnpress.png);
     }
 }
-
-.labelPlayStop{
-    text-align: center;
-    color: #fff;
-    margin-top: 3px;
-}
-
-.controlSubtitleBtnWrapper{
-    margin-left: 25px;
-    float: left;
-}
-
-.prevSubtitleWrapper{
-    float: none;
-    margin-top: 16px;
-}
-
-.nextSubtitleWrapper{
-    float: none;
-    margin-top: 60px;
-}
-
 .prevSubtitleBtn{
-    float: left;
-    width: 25px;
-    height: 25px;
+    background: url(../img/backbtn.png);
+    &:hover{
+        background: url(../img/backbtnhover.png);
+    }
+    &:active{
+        background: url(../img/backbtnpress.png);
+    }
 }
-
+.playBtn{
+    background: url(../img/playbtn.png);
+    &:hover{
+        background: url(../img/playbtnhover.png);
+    }
+    &:active{
+        background: url(../img/playbtnpress.png);
+    }
+}
+.tempStopBtn{
+    background: url(../img/tempstopbtn.png);
+    &:hover{
+        background: url(../img/tempstopbtnhover.png);
+    }
+    &:active{
+        background: url(../img/tempstopbtnpress.png);
+    }
+}
 .nextSubtitleBtn{
-    width: 25px;
-    height: 25px;
-    float: left;
+    background: url(../img/nextbtn.png);
+    &:hover{
+        background: url(../img/nextbtnhover.png);
+    }
+    &:active{
+        background: url(../img/nextbtnpress.png);
+    }
 }
-
-.labelPrevBtn{
-    color: #fff;
-    height: 25px;
-    text-align: left;
-    width: 80px;
-    float: left;
-    margin-left: 5px;
-    margin-top: 5px;
+.totalNextSubtitleBtn{
+    background: url(../img/totalnextbtn.png);
+    &:hover{
+        background: url(../img/totalnextbtnhover.png);
+    }
+    &:active{
+        background: url(../img/totalnextbtnpress.png);
+    }
 }
-
-.labelNextBtn{
-    margin-top: 5px;
-    color: #fff;
-    height: 25px;
-    margin-left: 5px;
-    width: 80px;
-    float: left;
-    text-align: left;
-}
-
-.allStopWrapper{
-    float: left;
-    margin-top: 36px;
-    margin-left: 25px;
-}
-
 .stopBtn{
-    float: left;
-    width:  25px;
-    height: 25px;
+    background: url(../img/stopbtn.png);
+    &:hover{
+        background: url(../img/stopbtnhover.png);
+    }
+    &:active{
+        background: url(../img/stopbtnpress.png);
+    }
 }
-.labelStopBtn{
-    float: left;
-    color: #fff;
-    margin-top: 5px;
-    margin-left: 5px;
-}
-
-
+    //여기까지 버튼 끝
+//재생, 일시정지, 정지, 이전 등등 버튼 끝
 
 
 /*자막 올리기 팝업창*/
@@ -386,26 +454,79 @@ body{
     margin-left: auto;
     margin-right: auto;
     margin-top: 290px;
-    width: 350px;
-    height: 200px;
-    height: 200px;
-    background-color: @sub-color;
+    width: 500px;
+    height: 220px;
+    background-color: @panelBackground;
+    color: #fff;
+    padding-top: 40px;
 }
 
 .uploadWrapper{
-    td{
-        padding-left: 20px;
-        padding-top: 30px;
+    height: 50px;
+}
+.subtitleInputLabel{
+    float: left;
+    text-align: center;
+    padding-top: 6px;
+    width: 65px;
+    margin-left: 29px;
+    margin-right: 20px;
+}
+.subtitleNameInput{
+    width: 353px;
+    height: 31px;
+}
+
+
+
+//코드팬에서 가져온 코드 START
+.filebox {display:inline-block; margin-right: 10px;}
+
+.filebox label {
+    display: inline-block;
+    padding: .5em .75em;
+    color: #999;
+    font-size: inherit;
+    line-height: normal;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    width: 333px;
+    height: 21px;
+    background: url(../img/fileselectbtn.png) no-repeat;
+    &:hover{
+        background: url(../img/fileselectbtnhover.png);
+    }
+    &:active{
+        background: url(../img/fileselectbtnpress.png);
     }
 }
 
-.fileUploadBtn{
-    
+
+.filebox input[type="file"] {  /* 파일 필드 숨기기 */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
 }
+//코드팬에서 가져온 코드 END
+
 
 .uploadBtn{
+    border: 0px;
+    background: url(../img/updatebtn.png) no-repeat;
     margin-top: 30px;
-    width: 300px;
+    width: 500px;
     height: 50px;
-    margin-left: 25px;
+    margin-left: 23px;
+    &:hover{
+        background: url(../img/updatebtnhover.png) no-repeat;
+    }
+    &:active{
+        background: url(../img/updatebtnpress.png) no-repeat;
+    }
 }

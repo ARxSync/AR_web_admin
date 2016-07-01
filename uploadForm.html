@@ -22,18 +22,17 @@
             <!--자막 입력 Table START-->
             <form method="POST" enctype="multipart/form-data" action="/upload">
                 <div class="uploadTable">
-                    <table>
-                        
-                        <tr class = "uploadWrapper">
-                            <td class="subtitleNameLabel">자막명</td>
-                            <td><input class="subtitleNameInput" type="text" name="name" /></td>
-                        </tr>
-                        <tr class = "uploadWrapper">
-                            <td class="subtitleFileLabel">자막파일</td>
-                            <td><input class="fileUploadBtn" type="file" name="file" /></td>
-                        </tr>
-                    </table>
-                    <input class="uploadBtn" type="submit" value="Upload" />
+                    <div class = "uploadWrapper">
+                        <p class="subtitleInputLabel">자막명</p>
+                        <input class="subtitleNameInput" type="text" name="name" />
+                    </div>
+                    <div class = "uploadWrapper filebox">
+                        <p class="subtitleInputLabel">자막파일</p>
+                        <label for ="uploadFile" class="subtitleFileLabel"></label>
+                        <input class="fileUploadBtn" id ="uploadFile" type="file" name="file" /><!--여기 아이디 썼습니다.-->
+                    </div>
+                    
+                    <input class="uploadBtn" type="submit" value=" "/>
                 </div>
             </form>
             <!--자막 입력 Table START-->
