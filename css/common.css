@@ -1,0 +1,461 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+body {
+  height: inherit;
+  font-family: 'Nanum Gothic', serif;
+  font: 500 15px NanumGothic;
+  background-color: #fff;
+}
+.totalWrapper {
+  width: 1282px;
+  height: 793px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  background-image: url("../img/backgroundimg.png");
+  background-repeat: repeat-y;
+}
+.wrapper {
+  margin-top: 270px;
+  width: 385px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logoDiv {
+  width: 198px;
+  height: 83px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../img/logo.png");
+}
+.loginBox {
+  width: 385px;
+  height: 211px;
+  padding-top: 40px;
+}
+.loginText {
+  background-color: rgba(120, 120, 120, 0);
+  border-style: solid;
+  border-color: #999999;
+  border-top-color: rgba(120, 120, 120, 0);
+  border-left-color: rgba(120, 120, 120, 0);
+  border-right: rgba(120, 120, 120, 0);
+  width: 230px;
+  height: 20px;
+  color: #999999;
+  outline: none;
+  text-align: center;
+}
+.inputDivWrapper {
+  margin-bottom: 15px;
+}
+.idLabel {
+  margin-top: 8px;
+  background-image: url("../img/idtext.png");
+  height: 12px;
+  width: 19px;
+  color: #999999;
+  float: left;
+  margin-left: 48px;
+  margin-right: 20px;
+}
+.pwLabel {
+  margin-top: 8px;
+  margin-right: 20px;
+  background-image: url("../img/pwtext.png");
+  height: 12px;
+  width: 19px;
+  color: #999999;
+  float: left;
+  margin-left: 48px;
+}
+.submitBtn {
+  margin-top: 27px;
+  color: #999999;
+  margin-left: 45px;
+  border-radius: 5px;
+  background-color: rgba(120, 120, 120, 0);
+  width: 291px;
+  height: 43px;
+  border-color: #999999;
+  border-style: solid;
+  font: 600 16px NanumGothic;
+}
+/*여기서부터 아래부분은 컨트롤 html 페이지*/
+.controlWrapper {
+  width: 1100px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 17px;
+  font: 500 12px NanumGothic;
+}
+.pinCode {
+  margin-bottom: 10px;
+  text-align: center;
+  font: 18px NanumGothic;
+}
+.secondPanel {
+  margin-left: 11px;
+}
+.controlPanelWrapper {
+  margin-top: 17px;
+  height: 490.3px;
+  width: 503.3px;
+  display: inline-block;
+  border: 3px solid #2a2a2a;
+  padding: 16px;
+  padding-top: 12px;
+}
+.languageWrapper {
+  height: 80px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.languageWrapper label {
+  width: 77px;
+  height: 77px;
+  display: inline-block;
+  padding-top: 31px;
+  background: url(../img/currentlangcir.png) no-repeat;
+}
+.mainPanel {
+  background-color: #fff;
+  height: 326px;
+  width: 503px;
+  text-align: center;
+}
+.panelTitleWrapper {
+  position: absolute;
+  height: 44px;
+  border-top: 2px solid #2a2a2a;
+  border-bottom: 2px solid #2a2a2a;
+  top: 325px;
+}
+.panelTitle {
+  display: block;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.subtitlePart {
+  height: 300px;
+  margin-top: 45px;
+  background: #fff;
+}
+.panelContent {
+  height: 20px;
+  background: #fff;
+  font-size: 12px;
+}
+.subtitleId {
+  width: 33.16483662263018px;
+}
+.startTime {
+  width: 99.49450560384011px;
+}
+.endTime {
+  width: 99.49450560384011px;
+}
+.subtitleContent {
+  width: 270.84615342946745px;
+}
+.editSubtitle {
+  background-color: #fff;
+  width: 503px;
+  height: 40px;
+  margin-top: 5px;
+  color: #000;
+  font-size: 16px;
+  border: 2px solid #2a2a2a;
+}
+.editSubtitle:hover {
+  background-color: #bfbfbf;
+}
+.editSubtitle:active {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+/*아래 조작 패널*/
+.operatePanelWrapper {
+  float: left;
+  width: 1100px;
+}
+.bottomItems {
+  background-color: #2a2a2a;
+  height: 70px;
+  margin-top: 17px;
+  width: 503.3px;
+  display: inline-block;
+  border: 3px solid #2a2a2a;
+  padding: 16px;
+  padding-top: 12px;
+}
+.languageSelection {
+  width: 1100px;
+  background-color: #2a2a2a;
+  height: 110px;
+  padding-top: 18px;
+}
+.languageSelection .languageItemsWrapper {
+  margin-left: 30px;
+  width: 948px;
+  height: 85px;
+  background: #2a2a2a;
+}
+.languageSelection .languageItemsWrapper div {
+  height: 65px;
+  width: 65px;
+  margin-top: 8px;
+  margin-right: -13px;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+  background: url(../img/langselectbtn.png) no-repeat;
+}
+.languageSelection .languageItemsWrapper div label {
+  float: left;
+  width: 65px;
+  margin-top: 25px;
+}
+.languageSelection .languageItemsWrapper div:hover {
+  background: url(../img/langselectbtnhover.png);
+}
+.languageSelection .languageItemsWrapper div:active {
+  background: url(../img/langselectbtnpress.png);
+}
+.languageSelection .languageItemsWrapper div:active label {
+  color: #fff;
+}
+.languageSelection .languageItemsWrapper .deleteBtn {
+  top: -53px;
+  left: 6px;
+  height: 10px;
+  margin-right: 13px;
+  border: none;
+  background: url(../img/deletebtn.png) no-repeat;
+  position: relative;
+  z-index: 3;
+}
+.languageSelection .divisionline {
+  margin-top: 8px;
+  margin-left: 16px;
+  width: 2px;
+  display: inline-block;
+  height: 77px;
+  background: #fff;
+}
+.languageSelection .addLanguageBtn {
+  margin-left: 17px;
+  height: 72px;
+  width: 77px;
+  display: inline-block;
+  border: none;
+  background: url(../img/addlangbtn.png) no-repeat;
+}
+.languageSelection .addLanguageBtn:hover {
+  background: url(../img/addlangbtnhover.png) no-repeat;
+}
+.languageSelection .addLanguageBtn:active {
+  background: url(../img/addlangbtnpress.png) no-repeat;
+}
+.jumpTo {
+  float: left;
+}
+.jumpToTitleText {
+  width: 60px;
+  margin-left: 20px;
+  margin-top: -13px;
+  padding-right: 25px;
+  text-align: left;
+  color: #fff;
+  font-size: 19px;
+  border-right: 2px solid #fff;
+  float: left;
+}
+.jumpToWrapper {
+  margin-top: 7px;
+  margin-left: 20px;
+  width: 375px;
+  float: left;
+}
+.labelJumpTo {
+  width: 70px;
+  margin-left: 4px;
+  float: left;
+  font-weight: 100;
+  color: #fff;
+  font-size: 18px;
+}
+.jumpToTextBox {
+  margin-left: 10px;
+  width: 230px;
+  height: 20px;
+  float: left;
+}
+.jumpToBtn {
+  margin-left: 15px;
+  width: 28px;
+  height: 28px;
+  border: 0px;
+  float: left;
+  background: url(../img/gobtn.png);
+}
+.jumpToBtn:hover {
+  background: url(../img/gobtnhover.png);
+}
+.jumpToBtn:active {
+  background: url(../img/gobtnpress.png);
+}
+.playPanel {
+  margin-left: 17px;
+  float: left;
+}
+.playPanelWrapper {
+  padding: 6px 25px;
+  height: 70px;
+}
+.playPanelWrapper input {
+  border: 0px;
+  height: 61px;
+  width: 61px;
+  margin-left: 10px;
+}
+.totalPrevSubtitleBtn {
+  background: url(../img/totalbackbtn.png);
+}
+.totalPrevSubtitleBtn:hover {
+  background: url(../img/totalbackbtnhover.png);
+}
+.totalPrevSubtitleBtn:active {
+  background: url(../img/totalbackbtnpress.png);
+}
+.prevSubtitleBtn {
+  background: url(../img/backbtn.png);
+}
+.prevSubtitleBtn:hover {
+  background: url(../img/backbtnhover.png);
+}
+.prevSubtitleBtn:active {
+  background: url(../img/backbtnpress.png);
+}
+.playBtn {
+  background: url(../img/playbtn.png);
+}
+.playBtn:hover {
+  background: url(../img/playbtnhover.png);
+}
+.playBtn:active {
+  background: url(../img/playbtnpress.png);
+}
+.tempStopBtn {
+  background: url(../img/tempstopbtn.png);
+}
+.tempStopBtn:hover {
+  background: url(../img/tempstopbtnhover.png);
+}
+.tempStopBtn:active {
+  background: url(../img/tempstopbtnpress.png);
+}
+.nextSubtitleBtn {
+  background: url(../img/nextbtn.png);
+}
+.nextSubtitleBtn:hover {
+  background: url(../img/nextbtnhover.png);
+}
+.nextSubtitleBtn:active {
+  background: url(../img/nextbtnpress.png);
+}
+.totalNextSubtitleBtn {
+  background: url(../img/totalnextbtn.png);
+}
+.totalNextSubtitleBtn:hover {
+  background: url(../img/totalnextbtnhover.png);
+}
+.totalNextSubtitleBtn:active {
+  background: url(../img/totalnextbtnpress.png);
+}
+.stopBtn {
+  background: url(../img/stopbtn.png);
+}
+.stopBtn:hover {
+  background: url(../img/stopbtnhover.png);
+}
+.stopBtn:active {
+  background: url(../img/stopbtnpress.png);
+}
+/*자막 올리기 팝업창*/
+.uploadTable {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 290px;
+  width: 500px;
+  height: 220px;
+  background-color: #2a2a2a;
+  color: #fff;
+  padding-top: 40px;
+}
+.uploadWrapper {
+  height: 50px;
+}
+.subtitleInputLabel {
+  float: left;
+  text-align: center;
+  padding-top: 6px;
+  width: 65px;
+  margin-left: 29px;
+  margin-right: 20px;
+}
+.subtitleNameInput {
+  width: 353px;
+  height: 31px;
+}
+.filebox {
+  display: inline-block;
+  margin-right: 10px;
+}
+.filebox label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #999;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  width: 333px;
+  height: 21px;
+  background: url(../img/fileselectbtn.png) no-repeat;
+}
+.filebox label:hover {
+  background: url(../img/fileselectbtnhover.png);
+}
+.filebox label:active {
+  background: url(../img/fileselectbtnpress.png);
+}
+.filebox input[type="file"] {
+  /* 파일 필드 숨기기 */
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+.uploadBtn {
+  border: 0px;
+  background: url(../img/updatebtn.png) no-repeat;
+  margin-top: 30px;
+  width: 500px;
+  height: 50px;
+  margin-left: 23px;
+}
+.uploadBtn:hover {
+  background: url(../img/updatebtnhover.png) no-repeat;
+}
+.uploadBtn:active {
+  background: url(../img/updatebtnpress.png) no-repeat;
+}
